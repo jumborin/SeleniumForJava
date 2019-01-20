@@ -7,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 /**
  * Seleniumテスト用クラス
  * @author jumborin
- *
  */
 public class SeleniumSample {
 

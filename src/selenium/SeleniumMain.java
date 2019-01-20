@@ -3,7 +3,6 @@ package selenium;
 /**
  * Seleniumテスト用クラス
  * @author jumborin
- *
  */
 public class SeleniumMain {
 
