@@ -17,7 +17,7 @@ import org.openqa.selenium.By;
  * @author jumborin
  *
  */
-public class SeleniumTestPage extends GoogleChromeSeleniumTestPageBase {
+public class GoogleChromeSeleniumTestPage extends GoogleChromeSeleniumTestPageBase {
 
 	/**
 	 * @throws java.lang.Exception
@@ -37,7 +37,7 @@ public class SeleniumTestPage extends GoogleChromeSeleniumTestPageBase {
 	 * @throws java.lang.Exception
 	 */
 	@Before
-	public void setUp(){
+	public void setUp() throws Exception{
 		super.setUp("https://www.google.co.jp/maps/");
 	}
 
