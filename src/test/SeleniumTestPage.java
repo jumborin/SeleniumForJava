@@ -13,10 +13,11 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 
 /**
+ * Googlemapのテストクラス
  * @author jumborin
  *
  */
-public class SeleniumTestPage extends SeleniumTestPageBase {
+public class SeleniumTestPage extends GoogleChromeSeleniumTestPageBase {
 
 	/**
 	 * @throws java.lang.Exception
