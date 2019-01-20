@@ -50,6 +50,12 @@ public class SeleniumSample {
 		//グーグルマップに遷移する
 		driver.get("https://www.google.co.jp/maps/");
 
+		// タイトルを出力する。
+		System.out.println(driver.getTitle());
+
+		//URLを出力する
+		System.out.println(driver.getCurrentUrl());
+
 		//検索窓に入力する
 		driver.findElement(By.id("searchboxinput")).sendKeys("test");
 
