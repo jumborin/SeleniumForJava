@@ -44,7 +44,6 @@ public class GoogleChromeSeleniumTestPage extends GoogleChromeSeleniumTestPageBa
 	 */
 	@After
 	public void tearDown() {
-		super.tearDown();
 	}
 
 	/**
