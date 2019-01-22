@@ -1,6 +1,6 @@
 package base;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * ページ単体テスト用のスーパークラス(JUnitでテストケース作成時の継承元クラスとすること)
