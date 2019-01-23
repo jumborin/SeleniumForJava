@@ -7,19 +7,19 @@ import org.junit.jupiter.api.Test;
  * @author jumborin
  *
  */
-public abstract class SeleniumTestPageBase {
+public interface  SeleniumTestPageBase {
 
 	/**
 	 * 指定ページへの遷移を行い、テストを実施する。
 	 * @param url
 	 */
-	protected abstract void setUp(String url);
+	abstract void setUp(String url);
 
 	/**
 	 * Webドライバを終了する
 	 * @throws Exception
 	 */
-	protected abstract void tearDown();
+	abstract void tearDown();
 
 	/**
 	 * タイトル表示のテストメソッド

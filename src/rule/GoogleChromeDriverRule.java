@@ -1,21 +1,21 @@
-package base;
+package rule;
 
 import org.junit.rules.ExternalResource;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
  * Seleniumのドライバーを管理するルールクラス
  *
  * @author jumborin
  */
-public class InternetExplorerDriverRule extends ExternalResource {
+public class GoogleChromeDriverRule extends ExternalResource {
 
 	/** GoogleChromeドライバーのクラス名 */
-	private final String IE_DRIVER_CLASS = "webdriver.ie.driver";
+	private final String CHROME_DRIVER_CLASS = "webdriver.chrome.driver";
 
 	/** GoogleChromeドライバーのファイルパス */
-	private final String IE_DRIVER_PATH = "driver/IEDriverServer.exe";
+	private final String CHROME_DRIVER_PATH = "driver/chromedriver.exe";
 
 	/** Seleniumドライバー*/
 	private WebDriver driver;
@@ -27,8 +27,8 @@ public class InternetExplorerDriverRule extends ExternalResource {
 	public WebDriver getDriver() {
 		if (this.driver == null) {
 			//登録
-			System.setProperty(IE_DRIVER_CLASS, IE_DRIVER_PATH);
-			this.driver = new InternetExplorerDriver();
+			System.setProperty(CHROME_DRIVER_CLASS, CHROME_DRIVER_PATH);
+			this.driver = new ChromeDriver();
 		}
 		return this.driver;
 	}

@@ -3,12 +3,14 @@ package base;
 import org.junit.ClassRule;
 import org.openqa.selenium.WebDriver;
 
+import rule.GoogleChromeDriverRule;
+
 /**
  * ページ単体テスト用のスーパークラス(JUnitでテストケース作成時の継承元クラスとすること)
  * @author jumborin
  *
  */
-public abstract class GoogleChromeSeleniumTestPageBase extends SeleniumTestPageBase {
+public abstract class GoogleChromeSeleniumTestPageBase implements SeleniumTestPageBase {
 
 	/** クラスルール */
 	@ClassRule
@@ -22,7 +24,7 @@ public abstract class GoogleChromeSeleniumTestPageBase extends SeleniumTestPageB
 	 * 指定ページへの遷移を行い、テストを実施する。
 	 * @param url
 	 */
-	protected void setUp(String url) {
+	public void setUp(String url) {
 		//引数の指定URLに遷移
 		driver.get(url);
 	}
@@ -31,7 +33,7 @@ public abstract class GoogleChromeSeleniumTestPageBase extends SeleniumTestPageB
 	 * Webドライバを終了する
 	 * @throws Exception
 	 */
-	protected void tearDown() {
+	public void tearDown() {
 		driver.close();
 	}
 }
