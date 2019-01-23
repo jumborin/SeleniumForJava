@@ -10,6 +10,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
+import base.IPageTest;
 import base.InternetExplorerSeleniumTestPageBase;
 
 /**
@@ -17,7 +18,8 @@ import base.InternetExplorerSeleniumTestPageBase;
  * @author jumborin
  *
  */
-public class InternetExplorerSeleniumTestPage extends InternetExplorerSeleniumTestPageBase {
+public class InternetExplorerSeleniumTestPage extends InternetExplorerSeleniumTestPageBase
+		implements IPageTest {
 
 	/**
 	 * @throws java.lang.Exception
@@ -37,7 +39,7 @@ public class InternetExplorerSeleniumTestPage extends InternetExplorerSeleniumTe
 	 * @throws java.lang.Exception
 	 */
 	@BeforeEach
-	public void setUp() throws Exception{
+	public void setUp() throws Exception {
 		super.setUp("http://localhost/");
 	}
 

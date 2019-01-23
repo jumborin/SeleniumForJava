@@ -1,6 +1,6 @@
 /**
  * 基底クラスのパッケージ
- * @author jumborin
  *
+ * @author jumborin
  */
 package base;

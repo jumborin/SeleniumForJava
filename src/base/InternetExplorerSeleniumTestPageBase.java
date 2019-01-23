@@ -10,7 +10,7 @@ import rule.InternetExplorerDriverRule;
  * @author jumborin
  *
  */
-public abstract class InternetExplorerSeleniumTestPageBase implements SeleniumTestPageBase {
+public abstract class InternetExplorerSeleniumTestPageBase  {
 
 	/** クラスルール */
 	@ClassRule

@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
 import base.GoogleChromeSeleniumTestPageBase;
+import base.IPageTest;
 
 /**
  * Googlemapのテストクラス
@@ -18,7 +19,7 @@ import base.GoogleChromeSeleniumTestPageBase;
  *
  */
 @DisplayName("GoogleChromeのSeleniumのページ単位テスト")
-public class GoogleChromeSeleniumTestPage extends GoogleChromeSeleniumTestPageBase {
+public class GoogleChromeSeleniumTestPage extends GoogleChromeSeleniumTestPageBase implements IPageTest{
 
 	/**
 	 * @throws java.lang.Exception

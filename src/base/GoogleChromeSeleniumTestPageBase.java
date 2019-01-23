@@ -10,12 +10,11 @@ import rule.GoogleChromeDriverRule;
  * @author jumborin
  *
  */
-public abstract class GoogleChromeSeleniumTestPageBase implements SeleniumTestPageBase {
+public abstract class GoogleChromeSeleniumTestPageBase {
 
 	/** クラスルール */
 	@ClassRule
 	public static GoogleChromeDriverRule gcdr = new GoogleChromeDriverRule();
-
 
 	/** ブラウザを制御するWebDriverクラス */
 	protected WebDriver driver = gcdr.getDriver();
