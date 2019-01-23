@@ -23,7 +23,7 @@ public abstract class GoogleChromeSeleniumTestPageBase {
 	 * 指定ページへの遷移を行い、テストを実施する。
 	 * @param url
 	 */
-	public void setUp(String url) {
+	public void setUp(final String url) {
 		//引数の指定URLに遷移
 		driver.get(url);
 	}
