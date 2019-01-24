@@ -31,7 +31,7 @@ public class InternetExplorerSeleniumTestPage extends InternetExplorerSeleniumTe
 	/**
 	 * @throws java.lang.Exception
 	 */
-	@AfterEach
+	@AfterAll
 	public static void tearDownAfterClass() throws Exception {
 	}
 
@@ -44,8 +44,9 @@ public class InternetExplorerSeleniumTestPage extends InternetExplorerSeleniumTe
 	}
 
 	/**
+	 *
 	 */
-	@AfterAll
+	@AfterEach
 	public void tearDown() {
 	}
 

@@ -33,6 +33,6 @@ public abstract class InternetExplorerSeleniumTestPageBase {
 	 * @throws Exception
 	 */
 	public void tearDown() {
-		driver.close();
+		driver.quit();
 	}
 }
