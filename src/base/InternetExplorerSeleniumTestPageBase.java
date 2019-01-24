@@ -10,12 +10,11 @@ import rule.InternetExplorerDriverRule;
  * @author jumborin
  *
  */
-public abstract class InternetExplorerSeleniumTestPageBase  {
+public abstract class InternetExplorerSeleniumTestPageBase {
 
 	/** クラスルール */
 	@ClassRule
 	public static InternetExplorerDriverRule iedr = new InternetExplorerDriverRule();
-
 
 	/** ブラウザを制御するWebDriverクラス */
 	protected WebDriver driver = iedr.getDriver();
@@ -24,7 +23,7 @@ public abstract class InternetExplorerSeleniumTestPageBase  {
 	 * 指定ページへの遷移を行い、テストを実施する。
 	 * @param url
 	 */
-	public void setUp(String url) {
+	public void setUp(final String url) {
 		//引数の指定URLに遷移
 		driver.get(url);
 	}
